@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Adding CSS</title>
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            .Internal_CSS {
+                background: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Adding CSS</h1>
+        <section class="Inline_CSS">
+            <h2>Inline CSS</h2>
+            <p>In the same line as the HTML tag</p>
+            <p>Useful for adding CSS to <strong>one element</strong> but
+                otherwise janky</p>
+            <img src="Screenshot 2024-08-15 at 09.14.05.png" alt="Inline CSS">
+            <style>.Inline_CSS {background: red};</style>
+        </section>
+        <section class="Internal_CSS">
+            <h2>Internal CSS</h2>
+            <p>Lives in the Head</p>
+            <p>Uses a selector: {background: red}</p>
+            <p>Target as many elements as you like</p>
+            <p>Useful for one <strong>HTML Document</strong></p>
+            <p>Limited to the one page it lives in</p>
+            <img src="Screenshot 2024-08-15 at 09.16.44.png" alt="Internal CSS">
+        </section>
+        <section class="External_CSS">
+            <h2>External CSS</h2>
+            <p>Most commonly used</p>
+            <p>Can be applied to multiple pages</p>
+        </section>
+    </body>
+</html>
