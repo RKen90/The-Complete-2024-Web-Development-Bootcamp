@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Strings</title>
+    </head>
+    <body>
+        <h1>Strings</h1>
+        <h2>String Concatenation in JavaScript</h2>
+        <p>alert(message + " " + name);</p>
+        <button onclick="sayHello()">Say Hello</button>
+
+        <h2>String Lengths and Retrieving number of chars</h2>
+        <p>.length</p>
+        <p>String Length Calculator</p>
+        <button onclick="lengthCalc()">Length Calculator</button>
+        <script>
+            function sayHello() {
+                var message = "Hello";
+                var name = prompt("What is your name?");
+
+
+                alert(message + " " + name);
+            }
+
+            function lengthCalc() {
+                var limit = 140;
+                var message = prompt("Please input your prompt here");
+            
+                // This shows an alert with the length of the message entered by the user
+                alert("Your message is " + message.length + " characters long.");
+            
+                // Optionally, you can compare it to the limit
+                if (message.length > limit) {
+                    alert("Your message exceeds the limit of " + limit + " characters.");
+                } else {
+                    alert("Your message is within the limit. You have " + (limit - message.length) + "characters remaining");
+                }
+            }
+            
+
+        </script>
+    </body>
+</html>
